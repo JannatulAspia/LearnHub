@@ -534,6 +534,14 @@
         .category-card:hover h3 {
             color: var(--primary);
         }
+.course-includes {
+    margin: 0;
+    padding-left: 20px;       /* সবকিছু প্রথম লাইনের exact position এ শুরু হবে */
+}
+
+.course-includes li {
+    margin-bottom: 6px;  /* space maintain */
+}
 
         .course-count {
             display: inline-block;
@@ -1486,6 +1494,9 @@
 .course-features-title {
     margin-top: 25px;   /* টাইটেলের আগে spacing বাড়াবে */
 }
+.what-you-learn-title {
+    margin-bottom: 18px;   /* gap বাড়বে */
+}
 
     </style>
 </head>
@@ -1513,8 +1524,7 @@
                     <li><a href="#" data-section="categories">Categories</a></li>
                     <li><a href="#" data-section="course-details">Courses</a></li>
                     <li>
-                        <a href="#" data-section="auth-section">Login</a>
-                        <span class="notification-badge">3</span>
+                        <a href="#" class="login-link" data-section="auth-section">Login</a>
                     </li>
                     <li><a href="#" data-section="dashboard-section">Dashboard</a></li>
                 </ul>
@@ -1629,8 +1639,8 @@
                         <span class="rating"><i class="fas fa-star"></i> 4.8 (2,540 reviews)</span>
                     </div>
                     <div class="course-content">
-                        <h4>What you'll learn</h4>
-                        <ul style="list-style: none; padding-left: 0;">
+                       <h3 class="what-you-learn-title">What you'll learn</h3>
+                        <ul class="learn-list" style="list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 15px; padding-left: 25px; position: relative;">
                                 <i class="fas fa-check-circle" style="position: absolute; left: 0; color: var(--success);"></i>
                                 Build 16 web development projects for your portfolio
@@ -1668,8 +1678,8 @@
                         <p class="moneyback">30-Day Money-Back Guarantee</p>
                     </div>
                     <div class="course-features">
-                        <h3 class="course-features-title">This course includes:</h3>
-   <ul class="course-features">
+   <h3>This course includes:</h3>
+<ul class="course-includes">
     <li>65 hours on-demand video</li>
     <li>42 articles & resources</li>
     <li>Downloadable assets</li>
@@ -1677,6 +1687,7 @@
     <li>Access on mobile & TV</li>
     <li>Certificate of completion</li>
 </ul>
+
                     </div>
                 </div>
             </div>
